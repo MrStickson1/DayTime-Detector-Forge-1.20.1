@@ -1,4 +1,3 @@
-// =================== EKLENDİ: DayTimeDetectorBlock.java ===================
 package net.mrstickson.daytimedetector.block;
 
 import net.minecraft.core.BlockPos;
@@ -41,9 +40,9 @@ public class DayTimeDetectorBlock extends Block {
         long time = world.getServer().getLevel(Level.OVERWORLD).getDayTime() % 24000;
 
         if (time >= 12300 && time <= 23850) {
-            return 0; // Gece: sinyal kapalı
+            return 0;
         } else {
-            return 15; // Gündüz: sinyal açık
+            return 15;
         }
     }
 }

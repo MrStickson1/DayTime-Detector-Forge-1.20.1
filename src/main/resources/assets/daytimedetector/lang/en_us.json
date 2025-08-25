@@ -1,0 +1,9 @@
+{
+  "item.daytimedetector.sapphire": "Sapphire",
+  "item.daytimedetector.raw_sapphire": "Raw Sapphire",
+
+  "block.daytimedetector.daytimedetector": "DayTime Detector",
+  "block.daytimedetector.raw_sapphire_block": "Block of Raw Sapphire",
+
+  "creativetab.daytimedetector_tab": "DayTime Detector"
+}

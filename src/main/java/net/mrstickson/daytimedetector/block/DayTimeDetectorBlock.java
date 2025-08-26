@@ -58,7 +58,7 @@ public class DayTimeDetectorBlock extends Block {
         long time = world.getServer().getLevel(Level.OVERWORLD).getDayTime() % 24000;
         boolean inverted = state.getValue(INVERTED);
 
-        int signal = (time >= 12300 && time <= 23850) ? 0 : 15;
+        int signal = (time >= 13670 && time <= 22330) ? 0 : 15;
         return inverted ? 15 - signal : signal;
     }
 

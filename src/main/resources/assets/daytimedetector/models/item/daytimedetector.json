@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:item/daylight_detector",
   "textures": {
-    "all": "daytimedetector:block/daytimedetector"
+    "top": "daytimedetector:block/daytimedetector_top",
+    "side": "daytimedetector:block/daytimedetector_side"
   }
 }

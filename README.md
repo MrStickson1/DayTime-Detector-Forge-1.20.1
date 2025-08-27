@@ -6,5 +6,5 @@ The purpose of this block is to provide an **alternative** to the standard Dayli
 
 This allows it to work even when:
 
-- The block doesn't have a **direct view of the sky**.
+- The block doesn't have a view of **sky light**.
 - The block is in a **dimension** without a **day/night cycle**, such as **the Nether** or **the End**.

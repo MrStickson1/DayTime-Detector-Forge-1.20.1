@@ -9,4 +9,4 @@ This allows it to work even when:
 - The block doesn’t receive **sky light**.
 - The block is located in a **dimension** without a **day/night cycle**, such as **the Nether** or **the End**.
 
-![Crafting Recipe](craft.png)
+![Crafting Recipe](crafting.png)

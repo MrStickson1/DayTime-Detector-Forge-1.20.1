@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/daylight_detector",
+  "textures": {
+    "top": "daytime_detector:block/daytime_detector_top",
+    "side": "daytime_detector:block/daytime_detector_side"
+  }
+}

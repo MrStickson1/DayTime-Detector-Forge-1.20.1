@@ -1,4 +1,4 @@
-package net.mrstickson.daytimedetector;
+package net.mrstickson.daytime_detector;
 
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.common.MinecraftForge;
@@ -7,14 +7,14 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.mrstickson.daytimedetector.block.ModBlocks;
-import net.mrstickson.daytimedetector.items.ModItems;
+import net.mrstickson.daytime_detector.block.ModBlocks;
+import net.mrstickson.daytime_detector.items.ModItems;
 
-@Mod(DayTimeDetector.MODID)
-public class DayTimeDetector {
-    public static final String MODID = "daytimedetector";
+@Mod(DayTime_Detector.MODID)
+public class DayTime_Detector {
+    public static final String MODID = "daytime_detector";
 
-    public DayTimeDetector() {
+    public DayTime_Detector() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
@@ -30,7 +30,7 @@ public class DayTimeDetector {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-            event.accept(ModBlocks.DAYTIMEDETECTOR);
+            event.accept(ModBlocks.DAYTIME_DETECTOR);
         }
     }
 }

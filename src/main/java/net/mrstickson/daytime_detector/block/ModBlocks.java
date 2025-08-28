@@ -1,4 +1,4 @@
-package net.mrstickson.daytimedetector.block;
+package net.mrstickson.daytime_detector.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,17 +9,17 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.mrstickson.daytimedetector.DayTimeDetector;
-import net.mrstickson.daytimedetector.items.ModItems;
+import net.mrstickson.daytime_detector.DayTime_Detector;
+import net.mrstickson.daytime_detector.items.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, DayTimeDetector.MODID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, DayTime_Detector.MODID);
 
-    public static final RegistryObject<Block> DAYTIMEDETECTOR = registerBlock("daytimedetector",
-            () -> new DayTimeDetectorBlock(BlockBehaviour.Properties.copy(Blocks.DAYLIGHT_DETECTOR)));
+    public static final RegistryObject<Block> DAYTIME_DETECTOR = registerBlock("daytime_detector",
+            () -> new DayTime_DetectorBlock(BlockBehaviour.Properties.copy(Blocks.DAYLIGHT_DETECTOR)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

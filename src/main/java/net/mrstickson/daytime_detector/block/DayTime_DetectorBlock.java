@@ -1,4 +1,4 @@
-package net.mrstickson.daytimedetector.block;
+package net.mrstickson.daytime_detector.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -17,13 +17,13 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class DayTimeDetectorBlock extends Block {
+public class DayTime_DetectorBlock extends Block {
 
     public static final BooleanProperty INVERTED = BooleanProperty.create("inverted");
 
     protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D);
 
-    public DayTimeDetectorBlock(Properties properties) {
+    public DayTime_DetectorBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(INVERTED, false));
     }

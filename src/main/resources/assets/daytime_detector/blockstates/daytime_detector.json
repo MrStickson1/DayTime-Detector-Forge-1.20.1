@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "daytime_detector:block/daytime_detector"
+  },
+  "variants": {
+    "inverted=false": { "model": "daytime_detector:block/daytime_detector" },
+    "inverted=true":  { "model": "daytime_detector:block/daytime_detector_inverted" }
+  }
+}
